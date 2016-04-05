@@ -1,0 +1,156 @@
+/* ==========================================================================
+   -- Header | 1200px
+   ========================================================================== */
+
+header_height = 102px
+
+#language_option
+#collection_menu
+   top -(header_height/2)
+   height (header_height/2)
+
+#language_option.active
+#collection_menu.active
+	top header_height
+
+#language_option
+	ul.main_languages
+		li
+			padding 0 22px
+
+			a
+				font-size 16px
+				line-height (header_height/2)
+
+	.country
+		p
+			font-size 16px
+			line-height (header_height/2)
+			margin-right 14px
+
+		.select_list
+			width 230px
+			margin-top 2px
+			height ((header_height/2) - 2px)
+
+			.title
+				height ((header_height/2) - 2px)
+				padding 0 14px
+
+				span
+					line-height (header_height/2)
+					font-size 16px
+
+				i
+					line-height (header_height/2)
+					font-size 16px
+
+			ul.language_list
+				height 200px
+				padding 22px 14px 22px 0
+				margin-top 0
+
+				.mCSB_scrollTools
+					width 5px
+
+				li
+					a
+						font-size 16px
+						padding-bottom 16px
+#collection_menu
+	ul
+		height (header_height/2)
+
+		li
+			a
+				line-height (header_height/2)
+				font-size 16px
+
+header.root
+	.content
+		height 102px
+
+		.logo_wrapper
+			width auto
+			height @height
+
+			h1
+				width 149px
+				height 55px
+				left 30px
+
+		.option_wrapper
+			float right
+			display flex
+
+			nav.root
+				padding-left 0
+				padding-right 15px
+
+				ul
+					li
+						a
+							font-size 20px
+							line-height @height
+							padding 0 15px
+
+			#language_select
+				height @height
+				width 100px
+
+				.top
+					margin-top 15px
+					margin-bottom 10px
+
+					i
+						font-size 26px
+						width 26px
+						height 26px
+						text-align center
+
+				.bottom
+					span
+						font-size 14px
+						line-height normal
+
+				.line
+					height 4px
+
+body
+	background-color white
+
+	#app
+		.template
+			padding-bottom 104px
+
+			section
+				.intro_global
+					height 360px
+
+					.text_box
+						.wrapper
+							height @height
+
+							h2
+								font-size 34px
+								margin-bottom 20px
+
+							p
+								font-size 22px
+								line-height 26px
+
+							.button_wrapper
+								margin-top 30px
+								padding 14px 34px
+								border-width 3px
+
+								a
+									margin-top 0
+									padding 0
+
+									span
+										font-size 24px
+										margin-right 10px
+
+									i
+										font-size 20px

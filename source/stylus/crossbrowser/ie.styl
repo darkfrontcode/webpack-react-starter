@@ -1,0 +1,46 @@
+/* ==========================================================================
+   -- IE
+   ========================================================================== */
+
+//IE11
+@media all and (-ms-high-contrast:none) and (max-width: 1200px)
+	section#home .intro_banner .top .right #banner_three ul li .video_wrapper #video
+		display none
+
+	*::-ms-backdrop
+	section#collection_inner .bottom .right ul li .wrapper img
+		height 11vw
+
+	*::-ms-backdrop
+	section#collection_inner .top .left .image_wrapper img
+		height 40vw
+
+@media all and (-ms-high-contrast:none) and (min-width: 1200px)
+	section#home .intro_banner .top .right #banner_three ul li .video_wrapper #video
+		display none
+
+	*::-ms-backdrop
+	section#collection_inner .bottom .right ul li .wrapper img
+		height 110px
+
+	*::-ms-backdrop
+	section#collection_inner .top .left .image_wrapper img
+		height 400px
+
+
+//10
+@media screen and (max-width: 1200px)
+	@supports (-ms-accelerator:true)
+		section#collection_inner .bottom .right ul li .wrapper img
+			height 11vw
+
+		section#collection_inner .top .left .image_wrapper img
+			height 40vw
+
+@media screen and (min-width: 1200px)
+	@supports (-ms-accelerator:true)
+		section#collection_inner .bottom .right ul li .wrapper img
+			height 110px
+
+		section#collection_inner .top .left .image_wrapper img
+			height 400px
