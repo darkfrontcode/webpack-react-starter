@@ -5,7 +5,7 @@ var path = require('path'),
 module.exports = {
     devtool: 'eval-source-map',
     resolve: {
-        extensions: ['', '.js','styl']
+        extensions: ['', '.js', '.styl']
     },
     entry: path.join(__dirname, 'source/react/main.js'),
     output: {
