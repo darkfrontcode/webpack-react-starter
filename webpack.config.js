@@ -21,8 +21,16 @@ module.exports = {
             },
             {
                 test: /\.styl$/,
-                loader: 'style-loader!css-loader?modules!stylus-loader'
-            }
+                loader: 'style-loader!css-loader?modules&importLoaders=1&localIdentName=[local]__[name]___[hash:base64:5]!stylus-loader'
+            },
+            {
+				test: /\.(png|svg|jpg|gif)$/,
+				loader: "file-loader?name=assets/[name].[ext]"
+			},
+            {
+				test: /\.(woff|woff2|eot|ttf)$/,
+				loader: "file-loader?name=fonts/[name].[ext]"
+			}
         ]
     },
     plugins: [
