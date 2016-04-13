@@ -5,7 +5,7 @@ var path = require('path'),
 module.exports = {
     devtool: 'eval-source-map',
     resolve: {
-        extensions: ['', '.js', '.styl']
+        extensions: ['', '.js', '.css', '.styl', '.json']
     },
     entry: path.join(__dirname, 'source/react/main.js'),
     output: {
@@ -14,23 +14,31 @@ module.exports = {
     },
     module: {
         loaders: [
-            {
-                test: /\.js$/,
-                exclude: /node_modules/,
-                loader: 'babel'
-            },
-            {
-                test: /\.styl$/,
-                loader: 'style-loader!css-loader?modules&importLoaders=1&localIdentName=[local]__[name]___[hash:base64:5]!stylus-loader'
-            },
-            {
-				test: /\.(png|svg|jpg|gif)$/,
-				loader: "file-loader?name=assets/[name].[ext]"
-			},
-            {
-				test: /\.(woff|woff2|eot|ttf)$/,
-				loader: "file-loader?name=fonts/[name].[ext]"
-			}
+		{
+			test: /\.js$/,
+			exclude: /node_modules/,
+			loader: 'babel'
+		},
+		{
+			test: /\.css$/,
+			loader: 'style-loader!css-loader'
+		},
+		{
+			test: /\.styl$/,
+			loader: 'style-loader!css-loader?modules&importLoaders=1&localIdentName=[local]__[name]___[hash:base64:5]!stylus-loader'
+		},
+		{
+			test: /\.(png|svg|jpg|gif)$/,
+			loader: "file-loader?name=assets/[name].[ext]"
+		},
+		{
+			test: /\.(woff|woff2|eot|ttf)$/,
+			loader: "file-loader?name=fonts/[name].[ext]"
+		},
+		{
+		    test: /\.json$/,
+		    loader: "json"
+		}
         ]
     },
     plugins: [
