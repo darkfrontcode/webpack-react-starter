@@ -2,7 +2,8 @@
   "name": "webpack-react-starter",
   "version": "1.0.0",
   "scripts": {
-    "start": "webpack-dev-server --content-base build/ --progress --colors"
+    "start": "npm run open&& webpack-dev-server --content-base build/ --progress --colors",
+    "open": "start chrome http://localhost:8080"
   },
   "repository": {
     "type": "git",
